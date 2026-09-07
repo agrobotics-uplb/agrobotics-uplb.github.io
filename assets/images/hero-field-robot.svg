@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Agricultural robot in a research field</title>
+  <desc id="desc">A stylized field robot scanning crop rows with sensor beams near a greenhouse and mountain horizon.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#dfece7"/>
+      <stop offset="0.52" stop-color="#f7faf7"/>
+      <stop offset="1" stop-color="#cbdcd2"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" x2="1">
+      <stop offset="0" stop-color="#294f34"/>
+      <stop offset="1" stop-color="#6f7d3b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <path d="M0 414 C225 290 392 340 565 266 C770 178 987 268 1128 214 C1320 142 1454 210 1600 150 L1600 610 L0 610 Z" fill="#87a293"/>
+  <path d="M0 500 C220 400 372 440 584 382 C785 328 1000 386 1194 320 C1353 266 1484 306 1600 270 L1600 680 L0 680 Z" fill="#5f806b"/>
+  <rect x="1040" y="318" width="330" height="165" rx="8" fill="#e8eee9" opacity=".9"/>
+  <path d="M1040 318 L1205 230 L1370 318 Z" fill="#b8c7bf"/>
+  <path d="M1085 352 H1324 M1085 398 H1324 M1085 444 H1324 M1122 324 V483 M1198 284 V483 M1278 324 V483" stroke="#8ea197" stroke-width="8" opacity=".65"/>
+  <rect y="600" width="1600" height="400" fill="url(#field)"/>
+  <g opacity=".72" stroke="#d9dba6" stroke-width="7">
+    <path d="M50 1000 L600 600"/>
+    <path d="M260 1000 L720 600"/>
+    <path d="M470 1000 L840 600"/>
+    <path d="M680 1000 L960 600"/>
+    <path d="M890 1000 L1080 600"/>
+    <path d="M1100 1000 L1200 600"/>
+    <path d="M1310 1000 L1320 600"/>
+  </g>
+  <g transform="translate(615 545)">
+    <ellipse cx="180" cy="250" rx="265" ry="48" fill="#17201b" opacity=".22"/>
+    <rect x="68" y="104" width="310" height="108" rx="18" fill="#f5f7f4"/>
+    <rect x="95" y="72" width="175" height="76" rx="12" fill="#26352d"/>
+    <rect x="118" y="91" width="90" height="22" rx="4" fill="#70d19b"/>
+    <rect x="285" y="125" width="60" height="34" rx="8" fill="#7b1113"/>
+    <path d="M116 112 L20 44 M330 138 L445 60" stroke="#26352d" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="12" cy="38" r="18" fill="#d6a329"/>
+    <circle cx="452" cy="56" r="18" fill="#d6a329"/>
+    <circle cx="112" cy="228" r="58" fill="#151b18"/>
+    <circle cx="112" cy="228" r="28" fill="#657169"/>
+    <circle cx="336" cy="228" r="58" fill="#151b18"/>
+    <circle cx="336" cy="228" r="28" fill="#657169"/>
+    <path d="M206 104 C264 12 360 6 420 68" fill="none" stroke="#f5f7f4" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="424" cy="72" r="16" fill="#70d19b"/>
+    <path d="M424 72 L560 10 M424 72 L582 94 M424 72 L538 154" stroke="#70d19b" stroke-width="4" opacity=".8"/>
+  </g>
+</svg>

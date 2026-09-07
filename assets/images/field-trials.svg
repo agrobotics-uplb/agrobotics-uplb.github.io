@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Field robotics trial</title>
+  <desc id="desc">Placeholder illustration of crop rows, a compact rover, and sensor paths in a field.</desc>
+  <rect width="900" height="560" fill="#edf4f0"/>
+  <path d="M0 210 C190 120 330 170 500 100 C680 25 775 100 900 52 V320 H0 Z" fill="#78937e"/>
+  <rect y="270" width="900" height="290" fill="#4f6e38"/>
+  <g stroke="#d9d99b" stroke-width="8" opacity=".8">
+    <path d="M20 560 L330 270"/>
+    <path d="M160 560 L420 270"/>
+    <path d="M300 560 L510 270"/>
+    <path d="M440 560 L600 270"/>
+    <path d="M580 560 L690 270"/>
+    <path d="M720 560 L780 270"/>
+  </g>
+  <g transform="translate(355 258)">
+    <rect x="40" y="50" width="210" height="82" rx="14" fill="#f7faf7"/>
+    <rect x="76" y="18" width="90" height="62" rx="8" fill="#21362b"/>
+    <circle cx="84" cy="150" r="42" fill="#151b18"/>
+    <circle cx="84" cy="150" r="20" fill="#66706b"/>
+    <circle cx="214" cy="150" r="42" fill="#151b18"/>
+    <circle cx="214" cy="150" r="20" fill="#66706b"/>
+    <path d="M165 42 L280 0" stroke="#0f4f2f" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="286" cy="-2" r="16" fill="#d6a329"/>
+    <path d="M286 -2 C340 52 360 112 354 178" fill="none" stroke="#d6a329" stroke-width="4" opacity=".8"/>
+  </g>
+</svg>

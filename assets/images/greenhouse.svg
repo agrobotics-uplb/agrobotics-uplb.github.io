@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Smart greenhouse test area</title>
+  <desc id="desc">Placeholder illustration of a greenhouse with sensors and crop beds.</desc>
+  <rect width="900" height="560" fill="#f7faf7"/>
+  <rect y="382" width="900" height="178" fill="#e1ebe5"/>
+  <path d="M105 342 L450 116 L795 342 Z" fill="#d8e5de" stroke="#8fa39a" stroke-width="10"/>
+  <rect x="145" y="342" width="610" height="130" fill="#eef5f1" stroke="#8fa39a" stroke-width="10"/>
+  <g stroke="#9aaca3" stroke-width="7">
+    <path d="M450 116 V472"/>
+    <path d="M250 247 V472"/>
+    <path d="M650 247 V472"/>
+    <path d="M145 382 H755"/>
+  </g>
+  <g fill="none" stroke="#0f4f2f" stroke-width="9" stroke-linecap="round">
+    <path d="M210 430 C235 388 260 388 286 430"/>
+    <path d="M340 430 C365 388 390 388 416 430"/>
+    <path d="M490 430 C515 388 540 388 566 430"/>
+    <path d="M625 430 C650 388 675 388 701 430"/>
+  </g>
+  <circle cx="450" cy="245" r="20" fill="#7b1113"/>
+  <path d="M450 245 L382 305 M450 245 L518 305 M450 245 V330" stroke="#d6a329" stroke-width="5"/>
+</svg>

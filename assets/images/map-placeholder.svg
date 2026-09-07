@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">UPLB location placeholder map</title>
+  <desc id="desc">Abstract campus map placeholder with roads and field blocks.</desc>
+  <rect width="900" height="560" fill="#eef3ef"/>
+  <path d="M0 420 C170 330 240 450 390 350 C540 250 620 310 900 185" fill="none" stroke="#c5d0c9" stroke-width="58"/>
+  <path d="M0 420 C170 330 240 450 390 350 C540 250 620 310 900 185" fill="none" stroke="#ffffff" stroke-width="22"/>
+  <rect x="70" y="70" width="220" height="120" rx="8" fill="#dbe7df"/>
+  <rect x="610" y="330" width="210" height="120" rx="8" fill="#dbe7df"/>
+  <rect x="360" y="92" width="185" height="145" rx="8" fill="#d6e4d8"/>
+  <circle cx="472" cy="282" r="22" fill="#7b1113"/>
+  <path d="M472 282 C432 246 432 186 472 146 C512 186 512 246 472 282 Z" fill="#0f4f2f" opacity=".86"/>
+</svg>

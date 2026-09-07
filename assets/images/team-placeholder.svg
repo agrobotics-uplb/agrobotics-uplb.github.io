@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Team member placeholder</title>
+  <desc id="desc">Simple neutral placeholder portrait for ARTS Lab people profiles.</desc>
+  <rect width="600" height="600" fill="#eef3ef"/>
+  <circle cx="300" cy="220" r="92" fill="#b7c6bd"/>
+  <path d="M132 520 C158 396 232 346 300 346 C368 346 442 396 468 520 Z" fill="#0f4f2f"/>
+  <path d="M132 520 C158 396 232 346 300 346 C368 346 442 396 468 520 Z" fill="#7b1113" opacity=".34"/>
+</svg>
