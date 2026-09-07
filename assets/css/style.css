@@ -1,9 +1,10 @@
 :root {
+  /* UP institutional palette: maroon, forest green, and gold accent. */
   --maroon: #7b1113;
-  --maroon-dark: #4f0b0d;
-  --green: #0f4f2f;
-  --green-soft: #e7f1ec;
-  --gold: #d6a329;
+  --maroon-dark: #58080a;
+  --green: #014421;
+  --green-soft: #e7f0e9;
+  --gold: #ffb81c;
   --ink: #17201b;
   --muted: #66706b;
   --line: #dfe6e2;
@@ -93,26 +94,10 @@ a {
   transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
-.site-header::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -2px;
-  left: 0;
-  height: 3px;
-  background: var(--green);
-  opacity: 0;
-  transition: opacity 180ms ease;
-}
-
 .site-header.is-scrolled {
-  border-bottom-color: rgba(223, 230, 226, 0.9);
+  border-bottom-color: rgba(123, 17, 19, 0.22);
   background: rgba(255, 255, 255, 0.94);
   box-shadow: 0 4px 18px rgba(23, 32, 27, 0.04);
-}
-
-.site-header.is-scrolled::after {
-  opacity: 1;
 }
 
 .home-page .site-header:not(.is-scrolled) .brand-text strong,
@@ -121,13 +106,17 @@ a {
 }
 
 .home-page .site-header:not(.is-scrolled) .brand-text span {
-  color: #f2c95c;
+  color: var(--gold);
 }
 
-.home-page .site-header:not(.is-scrolled) .nav-links a:hover,
-.home-page .site-header:not(.is-scrolled) .nav-links a.active {
+.home-page .site-header:not(.is-scrolled) .nav-links a:hover {
   color: #fff;
   background: rgba(255, 255, 255, 0.16);
+}
+
+.home-page .site-header:not(.is-scrolled) .nav-links a.active {
+  color: #fff;
+  background: transparent;
 }
 
 .home-page .site-header:not(.is-scrolled) .nav-toggle {
@@ -241,14 +230,24 @@ a {
   text-decoration: none;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover {
   color: var(--maroon);
-  background: #f8eeee;
+  background: rgba(123, 17, 19, 0.07);
 }
 
-.nav-links a::after {
-  display: none;
+.nav-links a.active {
+  color: var(--maroon);
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  right: 9px;
+  bottom: 5px;
+  left: 9px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--gold);
 }
 
 .nav-links a:focus-visible,
@@ -262,11 +261,12 @@ a {
 
 .hero {
   position: relative;
-  min-height: clamp(620px, 100svh, 820px);
+  min-height: 100vh;
+  min-height: 100svh;
   display: grid;
   align-items: center;
   overflow: hidden;
-  background: #111d17;
+  background: #01351a;
 }
 
 .hero::before {
@@ -289,6 +289,31 @@ a {
   pointer-events: none;
 }
 
+.hero-particles {
+  position: absolute;
+  inset: -4%;
+  z-index: 1;
+  opacity: 0.32;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 8% 22%, rgba(255, 184, 28, 0.9) 0 1px, transparent 2px),
+    radial-gradient(circle at 18% 72%, rgba(218, 239, 224, 0.78) 0 1px, transparent 2px),
+    radial-gradient(circle at 30% 38%, rgba(255, 184, 28, 0.7) 0 1.5px, transparent 2.5px),
+    radial-gradient(circle at 43% 84%, rgba(218, 239, 224, 0.72) 0 1px, transparent 2px),
+    radial-gradient(circle at 57% 18%, rgba(255, 184, 28, 0.76) 0 1px, transparent 2px),
+    radial-gradient(circle at 69% 61%, rgba(218, 239, 224, 0.74) 0 1.5px, transparent 2.5px),
+    radial-gradient(circle at 78% 31%, rgba(255, 184, 28, 0.72) 0 1px, transparent 2px),
+    radial-gradient(circle at 91% 76%, rgba(218, 239, 224, 0.78) 0 1px, transparent 2px),
+    linear-gradient(120deg, transparent 49.8%, rgba(218, 239, 224, 0.22) 50%, transparent 50.2%) 72% 25% / 140px 1px no-repeat,
+    linear-gradient(120deg, transparent 49.8%, rgba(255, 184, 28, 0.18) 50%, transparent 50.2%) 12% 68% / 110px 1px no-repeat;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-particles {
+    animation: particle-drift 24s ease-in-out infinite alternate;
+  }
+}
+
 @keyframes hero-drift {
   from {
     transform: scale(1.02) translate3d(0, 0, 0);
@@ -301,7 +326,7 @@ a {
 
 .hero-inner {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: min(100% - 32px, var(--max));
   margin: 0 auto;
   padding: var(--space-8) 0;
@@ -318,7 +343,7 @@ a {
 
 .hero .eyebrow {
   display: inline-block;
-  color: #f2c95c;
+  color: var(--gold);
 }
 
 h1,
@@ -352,6 +377,35 @@ h3 {
   flex-wrap: wrap;
   gap: var(--space-3);
   margin-top: var(--space-6);
+}
+
+@keyframes particle-drift {
+  from { transform: translate3d(-0.5%, -0.4%, 0); }
+  to { transform: translate3d(0.8%, 0.6%, 0); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-intro > * {
+    opacity: 0;
+    animation: hero-intro-in 620ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .hero-intro > :nth-child(1) { animation-delay: 80ms; }
+  .hero-intro > :nth-child(2) { animation-delay: 160ms; }
+  .hero-intro > :nth-child(3) { animation-delay: 240ms; }
+  .hero-intro > :nth-child(4) { animation-delay: 320ms; }
+}
+
+@keyframes hero-intro-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .button {
@@ -777,7 +831,7 @@ a[href*="maps.app.goo.gl"]:not(.map-link)::before {
 .site-footer {
   color: #dce6e0;
   border-top: 4px solid var(--maroon);
-  background: #101a15;
+  background: #01351a;
 }
 
 .footer-grid {
@@ -812,11 +866,11 @@ a[href*="maps.app.goo.gl"]:not(.map-link)::before {
 }
 
 .site-footer a:hover {
-  color: #e8bd47;
+  color: var(--gold);
 }
 
 .site-footer h3 {
-  color: #e8bd47;
+  color: var(--gold);
   font-size: var(--text-sm);
   font-weight: 700;
   line-height: 1.2;
@@ -971,10 +1025,14 @@ a[href*="maps.app.goo.gl"]:not(.map-link)::before {
     color: #34413a;
   }
 
-  .home-page .site-header:not(.is-scrolled) .nav-links.open a:hover,
+  .home-page .site-header:not(.is-scrolled) .nav-links.open a:hover {
+    color: var(--maroon);
+    background: rgba(123, 17, 19, 0.07);
+  }
+
   .home-page .site-header:not(.is-scrolled) .nav-links.open a.active {
     color: var(--maroon);
-    background: #f8eeee;
+    background: transparent;
   }
 
   .nav-links a {
@@ -1006,10 +1064,6 @@ a[href*="maps.app.goo.gl"]:not(.map-link)::before {
   .brand-text span {
     max-width: 150px;
     font-size: var(--text-xs);
-  }
-
-  .hero {
-    min-height: min(760px, 100svh);
   }
 
   .hero-inner,
